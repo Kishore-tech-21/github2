@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishore S - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1 class="glow">KISHORE.S</h1>
+            <h2>Web Developer</h2>
+        </div>
+    </header>
+    <section id="about" class="container">
+        <img src="WhatsApp Image 2025-02-13 at 21.35.31_e78ba738.jpg" alt="Kishore S" class="profile-img">
+        <h2>About Me</h2>
+        <p class="animated-text">B.Tech IT Student 1st Year at Sri Sairam Engineering College | Aspiring Full-Stack Web Developer | Member of YUCI and IEEE</p>
+    </section>
+    <section id="education" class="container">
+        <h2>Education</h2>
+        <p><strong>Sri Sairam Engineering College</strong> - Information Technology (1st Year)</p>
+        <p><strong>Gokilambal International School (CBSE)</strong> - SSLC (84%)</p>
+        <p><strong>Higher Secondary</strong> - 12th Grade (91.2%)</p>
+    </section>
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>C Programming</li>
+            <li>MySQL</li>
+            <li>UI/UX Design</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Communication</li>
+            <li>Time Management</li>
+            <li>Teamwork</li>
+        </ul>
+    </section>
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <ul class="project-list">
+            <li><a href="#" onclick="openModal('files/loan_management.pdf')">Loan Management System with Chatbot</a></li>
+            <li><a href="#" onclick="openModal('files/college_web_app.pdf')">Intra and Inter College Web Application System</a></li>
+            <li><a href="#" onclick="openModal('files/road_safety.pdf')">AI-Driven Road Safety: Pothole Classification & Speed Breaker Detection</a></li>
+            <li><a href="#" onclick="openModal('files/overtake_assistance.pdf')">AI-Powered Overtake Assistance: Real-Time Vehicle Speed Detection</a></li>
+        </ul>
+    </section>
+    <section id="certifications" class="container">
+        <h2>Certifications</h2>
+        <ul class="certification-list">
+            <li><a href="#" onclick="openImageModal('images/python_certificate.jpg')">Python Programming</a></li>
+            <li><a href="#" onclick="openImageModal('images/c_programming_certificate.jpg')">C Programming</a></li>
+            <li><a href="#" onclick="openImageModal('images/html_css_certificate.jpg')">HTML & CSS</a></li>
+            <li><a href="#" onclick="openImageModal('images/microsoft_productivity.jpg')">Microsoft Digital Productivity</a></li>
+        </ul>
+    </section>
+    
+    <section id="qr-code" class="container">
+        <h2>Scan to Connect</h2>
+        <p>Scan the QR code to access all my social media links.</p>
+        <img  alt="QR Code" class="qr-img">
+    </section>
+    
+    <!-- Modal Structure for PDF -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="modal-iframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    
+    <!-- Modal Structure for Images -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img id="modal-image" src="" alt="Certification Image">
+        </div>
+    </div>
+    
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/kishore-s2007" target="_blank">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
